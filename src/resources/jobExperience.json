@@ -1,0 +1,84 @@
+[
+	{
+		"startDate": "Sep 2023",
+		"endDate": "Jan 2024",
+		"title": "Assistantship",
+		"organization": "Software Construction, EPFL",
+		"location": "Lausanne",
+		"description": "Created a first draft for a Scala mini project on web applications. Helped students with the course’s exercises and mini projects.",
+		"tags": ["Scala", "CS214", "Assistant", "Academic"]
+	},
+	{
+		"startDate": "Sep 2023",
+		"endDate": "Jan 2024",
+		"title": "Changemakers Program",
+		"organization": "Future Leaders, EPFL",
+		"location": "Lausanne",
+		"description": "Completed the EPFL Future Leader’s Changemakers program on transforming ideas into real-life projects and developing entrepreneurial skills.",
+		"tags": ["Entrepreneurship", "Management", "Latte"]
+	},
+	{
+		"startDate": "Feb 2023",
+		"endDate": "Jul 2023",
+		"title": "Assistantship",
+		"organization": "Introduction to Database Course, EPFL",
+		"location": "Lausanne",
+		"description": "Helped students with the course’s exercises and project about database systems.",
+		"tags": ["SQL", "Database", "Assistant", "Academic"]
+	},
+	{
+		"startDate": "Feb 2023",
+		"endDate": "Jul 2023",
+		"title": "Assistantship",
+		"organization": "Making Intelligent Things Course, EPFL",
+		"location": "Lausanne",
+		"description": "Helped students with the course’s robotics projects. Contributed to a course manual on chapters about laser cutting, 3D printing and stepper motors.",
+		"tags": ["Robotics", "Assistant"]
+	},
+	{
+		"startDate": "Sep 2023",
+		"endDate": "Jan 2023",
+		"title": "Bachelor Project",
+		"organization": "Supervisor Pr. Christoph Koch, EPFL",
+		"location": "Lausanne",
+		"description": "Creation of an open-source, 7 degrees-of-freedom wooden laser-cut robotic arm that aims to be easily reproducible. Creation of the software to control and animate it.",
+		"tags": ["Robotics", "Raspberry", "Electronics", "Software", "Arduino"]
+	},
+	{
+		"startDate": "Sep 2023",
+		"endDate": "Dev 2023",
+		"title": "Part-Time Software Developer",
+		"organization": "CHILI Lab, EPFL",
+		"location": "Lausanne",
+		"description": "Enhancement of the VR Project started during the internship aimed at developing a solution to teach logistics to students.",
+		"tags": ["VR", "CHILI", "SCRUM", "Software"]
+	},
+	{
+		"startDate": "Jul 2023",
+		"endDate": "Sep 2023",
+		"title": "Software Development Internship",
+		"organization": "CHILI Lab, EPFL",
+		"location": "Lausanne",
+		"description": "Development of a Solution to teach logistics to students, Virtual Reality Project using SCRUM methodology. As part of the project’s team, brought additional features and ideas, developed in C# using the Unity software.",
+		"tags": ["Internship", "VR", "CHILI", "SCRUM", "Software"]
+	},
+	{
+		"startDate": "Sep 2023",
+		"endDate": "Dev 2023",
+		"title": "Assistantship",
+		"organization": "Theory of Computation Course, EPFL",
+		"location": "Lausanne",
+		"description": "Helped students for the Theory of Computation course’s exercise session. Teaching, active listening, demonstrated openness to consider alternative solutions. (IC Teaching Assistant Award 2022)",
+		"award": true,
+		"tags": ["Assistant", "Award", "Academic"]
+	},
+	{
+		"startDate": "Aug 2023",
+		"endDate": "Sep 2023",
+		"title": "Software Development Internship",
+		"organization": "AISO sa, IT Solution Expert",
+		"location": "Geneva",
+		"description": "Used Spring for Java (Server building framework) and Angular for JavaScript (Website front-end framework) to create a demo version of a project-scheduler application.",
+		"tags": ["Java", "Full-Stack", "Internship", "JavaScript", "Software"]
+	}
+]

@@ -1,0 +1,23 @@
+[
+	{
+		"startDate": "2023",
+		"endDate": "Now",
+		"institution": "EPFL",
+		"location": "Lausanne, Switzerland",
+		"degree": "Master’s in Management, Technology and Entrepreneurship"
+	},
+	{
+		"startDate": "2019",
+		"endDate": "2023",
+		"institution": "EPFL",
+		"location": "Lausanne, Switzerland",
+		"degree": "Bachelor's in Computer Science"
+	},
+	{
+		"startDate": "2019",
+		"endDate": "2016",
+		"institution": "Lycée Germaine Tillion",
+		"location": "Sain Bel, France",
+		"degree": "Baccalauréat in Sciences, Spe. Maths"
+	}
+]

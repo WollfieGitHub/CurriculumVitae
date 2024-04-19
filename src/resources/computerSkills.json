@@ -1,0 +1,14 @@
+{
+	"Languages": [
+		"Java", "JavaScript", "Scala", "Python", "HTML", "CSS", "C#", "C", "SQL", "Kotlin"
+	],
+	"Libraries": [
+		"SCSS", "TypeScript", "NumPy"
+	],
+	"Frameworks": [
+		"Quarkus", "ReactJS", "NextJS", "Redux", "JavaFX", "Unity", "Angular"
+	],
+	"Others": [
+		"Git", "Docker", "Kubernetes", "Helm", "Raspberry Pi"
+	]
+}
