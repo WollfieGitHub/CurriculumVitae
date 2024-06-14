@@ -1,4 +1,4 @@
-import {Typography, useTheme} from "@mui/material";
+import {Typography} from "@mui/material";
 import {CVTheme} from "./theme";
 
 import Picture from "./resources/WOLFF-Leo.jpg";
@@ -11,7 +11,7 @@ const PICTURE_WIDTH = `calc(${BANNER_WIDTH} * 1.6)`;
 
 export default forwardRef<HTMLDivElement>(function Header(
 		{}, ref,
-) {
+	) {
 
 		return <div ref={ref} style={{
 			display: "flex", flexDirection: "row",
@@ -27,13 +27,17 @@ export default forwardRef<HTMLDivElement>(function Header(
 				backgroundColor: CVTheme.surfaceColor,
 				printColorAdjust: "exact",
 			}}>
-				<img src={Picture} style={{
-					borderRadius: "50%", width: PICTURE_WIDTH, height: "auto",
-					marginTop: `calc((${BANNER_HEIGHT} - ${PICTURE_WIDTH})/2)`,
-					marginLeft: `calc((${BANNER_WIDTH} - ${PICTURE_WIDTH})/2)`,
-					border: `solid 5px ${CVTheme.surfaceColor}`,
-					boxSizing: "border-box",
-				}}/>
+				<img
+					src={Picture}
+					alt={"Headshot of Leo Wolff"}
+					style={{
+						borderRadius: "50%", width: PICTURE_WIDTH, height: "auto",
+						marginTop: `calc((${BANNER_HEIGHT} - ${PICTURE_WIDTH})/2)`,
+						marginLeft: `calc((${BANNER_WIDTH} - ${PICTURE_WIDTH})/2)`,
+						border: `solid 5px ${CVTheme.surfaceColor}`,
+						boxSizing: "border-box",
+					}}
+				/>
 			</div>
 			<div style={{
 				paddingRight: 20, paddingBottom: 10,
@@ -48,5 +52,5 @@ export default forwardRef<HTMLDivElement>(function Header(
 				</Typography>
 			</div>
 		</div>;
-	}
-)
+	},
+);
