@@ -48,7 +48,7 @@ export default forwardRef<HTMLDivElement>(function Header(
 					EPFL Student, Education in Computer Science, Management and Entrepreneurship
 				</Typography>
 				<Typography variant={"subtitle2"} style={CVTheme.headingDetails}>
-					22 years old, French citizenship, Swiss B permit, Driving License
+					23 years old, French citizenship, Swiss B permit, Driving License
 				</Typography>
 			</div>
 		</div>;

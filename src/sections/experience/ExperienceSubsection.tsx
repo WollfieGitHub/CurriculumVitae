@@ -6,6 +6,7 @@ interface ExperienceSubsectionProps {
 	startDate: string;
 	endDate: string;
 	title: string;
+	url?: string;
 	organization: string;
 	location: string;
 	description: string;
@@ -18,7 +19,7 @@ interface ExperienceSubsectionProps {
 export default function ExperienceSubsection(
 	{
 		startDate, endDate,
-		title, organization,
+		title, url, organization,
 		location, description,
 		award,
 		tags, importantTags,
@@ -39,7 +40,7 @@ export default function ExperienceSubsection(
 			<Typography variant={"subtitle1"} style={{...CVTheme.jobDetails}} component={"span"}>
 				{award && <WorkspacePremiumOutlined style={{fontSize: CVTheme.jobDetails.fontSize}}/>}
 				<span style={{fontWeight: isImportant ? "bold" : undefined}}>
-				{title}
+				{url === undefined ? title : <a href={url} target={"_blank"} style={{ color: "inherit" }}>{title}</a>}
 			</span>
 				{` • ${organization} • ${location}`}
 			</Typography>

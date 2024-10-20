@@ -1,7 +1,38 @@
 [
 	{
+		"startDate": "Sep 2024",
+		"endDate": "Jan 2024",
+		"title": "Course Development Consultant",
+		"organization": "Software Construction Course, EPFL",
+		"location": "Lausanne",
+		"description": "Supported the professor and staff in web-application project-related matters and other course infrastructure issues.",
+		"tags": ["Scala", "CS214", "Assistant", "Academic"],
+		"type": "Assistantship"
+	},
+	{
+		"startDate": "Jul 2024",
+		"endDate": "Sep 2024",
+		"title": "Course Development Internship",
+		"organization": "Software Construction Course, EPFL",
+		"location": "Lausanne",
+		"description": "Adapted Scala mini-project on web applications into team project. Created pipeline and framework for students to implement their own web application in teams from scratch.",
+		"tags": ["Scala", "CS214", "Assistant", "Academic"],
+		"type": "Experience"
+	},
+	{
+		"startDate": "Sep 2024",
+		"endDate": "Dec 2024",
+		"title": "BLAZE Startup Accelerator",
+		"url": "https://www.epfl.ch/innovation/startup/incubation/blaze/",
+		"organization": "EPFL",
+		"location": "Lausanne",
+		"description": "Participated in the Blaze startup accelerator. Learned and applied communication, marketing, design and business principles to scale up entrepreneurial venture.",
+		"tags": ["Entrepreneurship", "Management", "Latte"],
+		"type": "School related project"
+	},
+	{
 		"startDate": "Feb 2024",
-		"endDate": "Now",
+		"endDate": "Jul 2024",
 		"title": "Assistantship",
 		"organization": "Software Construction Course, EPFL",
 		"location": "Lausanne",
@@ -23,6 +54,7 @@
 		"startDate": "Sep 2023",
 		"endDate": "Jan 2024",
 		"title": "Changemakers Program",
+		"url": "https://www.epfl.ch/innovation/students-innovation-lab/fr/epfl-changemakers/",
 		"organization": "Future Leaders, EPFL",
 		"location": "Lausanne",
 		"description": "Completed the EPFL Future Leader’s Changemakers program on transforming ideas into real-life projects and developing entrepreneurial skills.",
