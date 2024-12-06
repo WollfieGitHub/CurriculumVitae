@@ -7,13 +7,15 @@ interface EducationSubsectionProps {
 	institution: string;
 	location: string;
 	degree: string;
+	orientation?: string;
 }
 
 export default function EducationSubsection(
 	{
 		startDate, endDate,
 		institution,
-		location, degree
+		location, degree,
+		orientation,
 	}: EducationSubsectionProps,
 ) {
 
@@ -22,6 +24,12 @@ export default function EducationSubsection(
 			<span style={CVTheme.educationBold}>{ `${startDate} - ${endDate}, ${institution}` }</span>
 			{ `, ${location}` }
 			<br/>{ degree }
+			{orientation !== undefined && (<>
+				<br/>
+				<Typography color={"text.secondary"} fontSize={"0.8em"} fontFamily={"inherit"}>
+					{`Orientation: ${orientation}`}
+				</Typography>
+			</>)}
 		</Typography>
 	</div>;
 }

@@ -5,13 +5,14 @@ import {CVTheme} from "../../theme";
 interface SkillSubsectionProps {
 	title: string;
 	skills: string[];
+	startOfPage?: boolean;
 }
 
 export default function SkillSubsection(
-	{ title, skills }: SkillSubsectionProps,
+	{ title, skills, startOfPage }: SkillSubsectionProps,
 ) {
 
-	return <div>
+	return <div className={startOfPage ? "start-of-page" : ""}>
 		<Typography variant={"h5"} style={CVTheme.skillHeader}>
 			{ `${title}:` }
 		</Typography>

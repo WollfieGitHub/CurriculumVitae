@@ -1,6 +1,6 @@
 import React, {useCallback, useEffect, useRef, useState} from "react";
 import Header from "./Header";
-import LeftBanner from "./LeftBanner";
+import Banner from "./Banner";
 import Section from "./sections/Section";
 import ExperienceSubsection from "./sections/experience/ExperienceSubsection";
 
@@ -10,6 +10,7 @@ import skills from "./resources/computerSkills.json";
 import hobbies from "./resources/hobbies.json";
 import languages from "./resources/languages.json";
 import generalSkills from "./resources/generalSkills.json";
+import relevantCourses from "./resources/relevantCourses.json";
 import {CVTheme} from "./theme";
 import EducationSubsection from "./sections/education/EducationSubsection";
 import SkillSubsection from "./sections/computer-skills/SkillSubsection";
@@ -19,6 +20,7 @@ import Languages from "./sections/banner/languages/Languages";
 import GeneralSkills from "./sections/banner/general-skills/GeneralSkills";
 import ExperienceSubsectionDivider from "./sections/experience/ExperienceSubsectionDivider";
 import {useRefDimensions} from "./refDimensions.hook";
+import RelevantCourses from "./sections/courses/RelevantCourses";
 
 type ExperienceType = (typeof experiences)[number]
 type Tag = ExperienceType["tags"][number]
@@ -29,9 +31,6 @@ function CurriculumVitae() {
 
 	const { height: headerHeight, ref } = useRefDimensions<HTMLDivElement>();
 
-	useEffect(() => {
-		console.log(headerHeight)
-	}, [headerHeight]);
 
 	return (
 		<div className="App" style={{
@@ -45,22 +44,26 @@ function CurriculumVitae() {
 		}}>
 			<Header ref={ref} />
 			<div id={"content"} style={{
-				display: "flex", flexDirection: "row", justifyContent: "start", alignItems: "start",
+				display: "flex", flexDirection: "row",
+				justifyContent: "start", alignItems: "start",
 				flexGrow: 1,
 			}}>
-				<LeftBanner
-					numberOfPages={3}
-					pageHeight={"11in"}
+				<Banner
+					numberOfPages={1}
+					pageHeight={"29.7cm"}
 					headerHeight={headerHeight}
 				>
 					<Contact/>
-					<Section title={"Skills"}>
+					<Section paddingBottom={CVTheme.headerMargin / 3} title={"Skills"}>
 						<GeneralSkills skills={generalSkills}/>
 					</Section>
-					<Section title={"Languages"}>
+					<Section paddingBottom={CVTheme.headerMargin / 3} title={"Languages"}>
 						<Languages languages={languages}/>
 					</Section>
-				</LeftBanner>
+					<Section paddingBottom={CVTheme.headerMargin / 3} title={"Relevant Courses"}>
+						<RelevantCourses courses={relevantCourses}/>
+					</Section>
+				</Banner>
 				<div style={{
 					display: "flex", flexDirection: "column", justifyContent: "start", alignItems: "start",
 					paddingTop: CVTheme.headerMargin
@@ -77,7 +80,6 @@ function CurriculumVitae() {
 							<ExperienceSubsection
 								{...experienceValue}
 								importantTags={IMPORTANT_TAGS}
-								topMargin={index === 7}
 							/>,
 						)}
 						<ExperienceSubsectionDivider label={"School-related projects"}/>
@@ -86,22 +88,25 @@ function CurriculumVitae() {
 							<ExperienceSubsection
 								{...experienceValue}
 								importantTags={IMPORTANT_TAGS}
-								topMargin={index === 7}
+								topMargin={index === 1}
 							/>,
 						)}
-						<ExperienceSubsectionDivider label={"Assistantships"}/>
+						<ExperienceSubsectionDivider label={"Teaching assistant positions"}/>
 						{experiences.filter(experienceValue => experienceValue.type === "Assistantship")
 							.map((experienceValue: any, index) =>
 							<ExperienceSubsection
 								{...experienceValue}
 								importantTags={IMPORTANT_TAGS}
-								topMargin={index === 7}
 							/>,
 						)}
 					</Section>
 					<Section title={"Computer Skills"}>
-						{ (Object.keys(skills) as (keyof typeof skills)[]).map(skillCategory => (
-							<SkillSubsection title={skillCategory} skills={skills[skillCategory]}/>
+						{ (Object.keys(skills) as (keyof typeof skills)[]).map((skillCategory, index) => (
+							<SkillSubsection
+								startOfPage={index === 2}
+								title={skillCategory}
+								skills={skills[skillCategory]}
+							/>
 						)) }
 					</Section>
 					<Section title={"Hobbies"}>

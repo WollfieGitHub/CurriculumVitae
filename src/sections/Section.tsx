@@ -1,22 +1,29 @@
-import {ReactNode} from "react";
-import {Typography} from "@mui/material";
+import {CSSProperties, ReactNode} from "react";
+import {SxProps, Typography} from "@mui/material";
 import {CVTheme} from "../theme";
 
 interface SectionProps {
 	title: string;
 	children?: ReactNode;
+	topMargin?: boolean;
+	style?: CSSProperties;
+	paddingBottom?: number;
 }
 
 export default function Section(
-	{ title, children }: SectionProps,
+	{ title, children, topMargin = false, style, paddingBottom, }: SectionProps,
 ) {
 
-	return <div style={{
-		width: "100%", boxSizing: "border-box",
-		paddingLeft: 30, paddingRight: 30, gap: 15,
-		paddingBottom: 10,
-		display: "flex", flexDirection: "column", justifyContent: "start", alignItems: "start"
-	}}>
+	return <div
+		style={{
+			width: "100%", boxSizing: "border-box",
+			paddingLeft: 30, paddingRight: 30, gap: 15,
+			paddingBottom: paddingBottom ?? 10,
+			display: "flex", flexDirection: "column", justifyContent: "start", alignItems: "start",
+			...style
+		}}
+		className={topMargin ? "start-of-page" : ""}
+	>
 		<div style={{
 			height: "0.25in", width: "100%",
 			display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center"

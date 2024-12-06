@@ -8,7 +8,7 @@ interface LeftBannerProps {
 	headerHeight: number;
 }
 
-export default function LeftBanner(
+export default function Banner(
 	{ children, numberOfPages, pageHeight, headerHeight }: LeftBannerProps,
 ) {
 
@@ -25,7 +25,6 @@ export default function LeftBanner(
 		display: "flex", flexDirection: "column",
 		justifyContent: "start", alignItems: "center",
 		paddingTop: CVTheme.headerMargin,
-		gap: CVTheme.headerMargin,
 	}}>
 		{ children }
 	</div>;

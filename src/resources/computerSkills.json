@@ -1,12 +1,15 @@
 {
-	"Languages": [
-		"Java", "JavaScript", "Python", "Scala", "HTML", "CSS", "C#", "PostgreSQL", "Kotlin", "C"
+	"Softwares": [
+		"Microsoft Office suite", "Google suite"
 	],
-	"Frameworks": [
+	"Programming Languages": [
+		"Java", "JavaScript", "Python", "Scala", "HTML", "CSS", "C#", "PostgreSQL", "R", "Go", "Kotlin", "C"
+	],
+	"Programming Frameworks": [
 		"Quarkus", "ReactJS", "TypeScript", "Redux", "NextJS", "Unity", "NumPy", "SCSS", "JavaFX", "PyTorch", "Angular"
 	],
-	"Cloud": [
-		"Google Cloud (GKE)", "Azure (AKS)"
+	"Cloud Infrastructure": [
+		"Google Cloud (focus on GKE)", "Azure (focus on AKS)"
 	],
 	"Others": [
 		"Git", "Docker", "Kubernetes", "Helm", "Github Actions", "Raspberry Pi"

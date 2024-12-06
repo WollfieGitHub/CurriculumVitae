@@ -8,6 +8,7 @@ export default function Contact() {
 		justifyContent: "center", alignItems: "center",
 		gap: 20,
 		width: "100%",
+		paddingBottom: CVTheme.headerMargin,
 	}}>
 		<div style={{width: "60%"}}>
 			<Typography style={CVTheme.headingSection}>{"PHONE"}</Typography>
@@ -16,7 +17,7 @@ export default function Contact() {
 		<div style={{width: "60%"}}>
 			<Typography style={CVTheme.headingSection}>{"EMAIL"}</Typography>
 			<Typography style={CVTheme.contact} component={"a"}
-			            href={"mailto:leo.wolff@epfl.ch"}>leo.wolff@epfl.ch</Typography>
+			            href={"mailto:leo.wolff@free.fr"}>leo.wolff@free.fr</Typography>
 		</div>
 		{process.env.ADDRESS && <div style={{width: "60%"}}>
 			<Typography style={CVTheme.headingSection}>{"ADDRESS"}</Typography>

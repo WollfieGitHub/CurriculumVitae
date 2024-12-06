@@ -47,6 +47,9 @@ export default forwardRef<HTMLDivElement>(function Header(
 				<Typography variant={"h3"} style={CVTheme.headingEmploy}>
 					EPFL Student, Education in Computer Science, Management and Entrepreneurship
 				</Typography>
+				<Typography variant={"h4"} color={"text.secondary"} style={CVTheme.headingOrientation}>
+					Orientation in Strategy, Innovation & Entrepreneurship
+				</Typography>
 				<Typography variant={"subtitle2"} style={CVTheme.headingDetails}>
 					23 years old, French citizenship, Swiss B permit, Driving License
 				</Typography>
