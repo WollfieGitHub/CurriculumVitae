@@ -18,13 +18,12 @@ export default function Banner(
 		position: "relative",
 		backgroundColor: CVTheme.surfaceColor,
 		printColorAdjust: "exact",
-		borderTopRightRadius: 48,
-		width: "2.83in", minWidth: "2.83in",
-		height: `calc(${numberOfPages} * ${pageHeight} - ${headerHeight}px)`,
+		borderRadius: 48/2,
+		width: "90%",
 		zIndex: 10,
 		display: "flex", flexDirection: "column",
 		justifyContent: "start", alignItems: "center",
-		paddingTop: CVTheme.headerMargin,
+		paddingTop: 10, paddingBottom: 10,
 	}}>
 		{ children }
 	</div>;

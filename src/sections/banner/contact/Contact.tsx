@@ -4,24 +4,22 @@ import {CVTheme} from "../../../theme";
 export default function Contact() {
 
 	return <div style={{
-		display: "flex", flexDirection: "column",
-		justifyContent: "center", alignItems: "center",
-		gap: 20,
-		width: "100%",
-		paddingBottom: CVTheme.headerMargin,
+		display: "flex", flexDirection: "row",
+		justifyContent: "start", alignItems: "start",
+		gap: 10, marginTop: 10, marginBottom: 10,
+		boxSizing: "border-box",
 	}}>
-		<div style={{width: "60%"}}>
-			<Typography style={CVTheme.headingSection}>{"PHONE"}</Typography>
-			<Typography style={CVTheme.contact}>+33781389029</Typography>
-		</div>
-		<div style={{width: "60%"}}>
-			<Typography style={CVTheme.headingSection}>{"EMAIL"}</Typography>
-			<Typography style={CVTheme.contact} component={"a"}
-			            href={"mailto:leo.wolff@free.fr"}>leo.wolff@free.fr</Typography>
-		</div>
-		{process.env.ADDRESS && <div style={{width: "60%"}}>
-			<Typography style={CVTheme.headingSection}>{"ADDRESS"}</Typography>
-			<Typography style={CVTheme.contact}>{ process.env.ADDRESS }</Typography>
-		</div>}
+		<Typography style={CVTheme.contact}>
+			<Typography component={"span"} style={{...CVTheme.headingSection, fontWeight: "inherit"}}>{"Phone: "}</Typography>
+			+33781389029
+		</Typography>
+		<Typography style={CVTheme.contact}>
+			<Typography component={"span"} style={{...CVTheme.headingSection, fontWeight: "inherit"}}>{"Email: "}</Typography>
+			<Typography style={CVTheme.contact} component={"a"} href={"mailto:leo.wolff@free.fr"}>leo.wolff@free.fr</Typography>
+		</Typography>
+		{process.env.ADDRESS && <Typography style={CVTheme.contact}>
+			<Typography component={"span"} style={{...CVTheme.headingSection, fontWeight: "inherit"}}>{"Address: "}</Typography>
+			{ process.env.ADDRESS }
+		</Typography>}
 	</div>;
 }

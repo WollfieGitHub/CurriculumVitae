@@ -17,7 +17,7 @@ export default function Section(
 	return <div
 		style={{
 			width: "100%", boxSizing: "border-box",
-			paddingLeft: 30, paddingRight: 30, gap: 15,
+			paddingLeft: CVTheme.sectionPadding, paddingRight: CVTheme.sectionPadding, gap: 15,
 			paddingBottom: paddingBottom ?? 10,
 			display: "flex", flexDirection: "column", justifyContent: "start", alignItems: "start",
 			...style
@@ -28,7 +28,7 @@ export default function Section(
 			height: "0.25in", width: "100%",
 			display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center"
 		}}>
-			<Typography variant={"h4"} style={CVTheme.headingSection}>
+			<Typography variant={"h4"} style={{ ...CVTheme.headingSection, minWidth: "fit-content", whiteSpace: "nowrap", }}>
 				{ title.toUpperCase() }
 			</Typography>
 			<div style={{

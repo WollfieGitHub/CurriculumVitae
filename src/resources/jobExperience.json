@@ -1,5 +1,15 @@
 [
 	{
+		"startDate": "Feb 2025",
+		"endDate": "Aug 2025",
+		"title": "Product Manager Intern | Master Thesis in Industry: \"Development of an operational and decision-making framework at a leading quantum cybersecurity company\"",
+		"organization": "ID Quantique",
+		"location": "Geneva",
+		"description": "Performed gap analysis of the product management process in place to determine the optimal and feasible set of solutions to implement. To this end, analyzed the company's functions end-to-end and their interfaces with the product manager. Upon completion of a preliminary analysis, proposed and implemented a transition from a product-lifecycle-centric to a requirements-lifecycle-centric process. Leveraged computer science background to process, analyze and adapt legacy product development data. Presented findings to top management. Currently working on continuous improvement and monitoring of the framework developed based on feedback and pragmatic challenges.",
+		"tags": ["Management", "Process", "Operations", "Cross-functional", "Internship", "Industry"],
+		"type": "Experience"
+	},
+	{
 		"startDate": "Sep 2024",
 		"endDate": "Jan 2025",
 		"title": "Course Development Consultant",
@@ -23,10 +33,10 @@
 		"startDate": "Sep 2024",
 		"endDate": "Dec 2024",
 		"title": "BLAZE Startup Accelerator",
-		"url": "https://www.epfl.ch/innovation/startup/incubation/blaze/",
+		"url": "https://www.epfl.ch/innovation/startup/incubation/blaze/meet-2024-trailblazers-viii/",
 		"organization": "EPFL",
 		"location": "Lausanne",
-		"description": "Participated in the Blaze startup accelerator. Learned and applied communication, marketing, design and business principles to scale up entrepreneurial venture. Practiced presentation and pitching skills.",
+		"description": "Participated in the Blaze startup accelerator. Learned and applied communication, marketing, design and business principles to scale up entrepreneurial venture. Practiced presentation and pitching skills. Acquired experience with Google Play Store",
 		"tags": ["Entrepreneurship", "Management", "Latte"],
 		"type": "School related project"
 	},
@@ -49,6 +59,16 @@
 		"description": "Created a first draft for a Scala mini-project for the course on web applications. Helped students with the course’s exercises and mini projects.",
 		"tags": ["Scala", "CS214", "Assistant", "Academic"],
 		"type": "Assistantship"
+	},
+	{
+		"startDate": "Feb 2024",
+		"endDate": "Jul 2024",
+		"title": "Virtual Reality (VR) Project",
+		"organization": "Virtual Reality Course, EPFL",
+		"location": "Lausanne",
+		"description": "Using the Unity framework, contributed to building a VR game, receiving a special mention from the teachers.",
+		"tags": ["Game"],
+		"type": "School related project"
 	},
 	{
 		"startDate": "Sep 2023",
@@ -122,8 +142,8 @@
 		"type": "Experience"
 	},
 	{
-		"startDate": "Sep 2023",
-		"endDate": "Dec 2023",
+		"startDate": "Sep 2022",
+		"endDate": "Dec 2022",
 		"title": "Assistantship",
 		"organization": "Theory of Computation Course, EPFL",
 		"location": "Lausanne",

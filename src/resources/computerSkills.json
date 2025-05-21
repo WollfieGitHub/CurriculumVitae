@@ -1,6 +1,6 @@
 {
 	"Softwares": [
-		"Microsoft Office suite", "Google suite"
+		"Microsoft Office suite", "Google suite", "Atlassian (Jira) suite"
 	],
 	"Programming Languages": [
 		"Java", "JavaScript", "Python", "Scala", "HTML", "CSS", "C#", "PostgreSQL", "R", "Go", "Kotlin", "C"
@@ -9,7 +9,7 @@
 		"Quarkus", "ReactJS", "TypeScript", "Redux", "NextJS", "Unity", "NumPy", "SCSS", "JavaFX", "PyTorch", "Angular"
 	],
 	"Cloud Infrastructure": [
-		"Google Cloud (focus on GKE)", "Azure (focus on AKS)"
+		"Google Cloud (focus on GKE)", "Azure"
 	],
 	"Others": [
 		"Git", "Docker", "Kubernetes", "Helm", "Github Actions", "Raspberry Pi"

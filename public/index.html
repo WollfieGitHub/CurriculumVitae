@@ -2,8 +2,6 @@
 <html lang="en">
   <head>
     <style>
-
-
       @media print {
 
         marquee {
@@ -14,15 +12,14 @@
         }
         .start-of-page {
           page-break-before: always !important;
-          margin-top: 0.35in;
         }
       }
       @page {
         size: A4 !important;
-        margin: 0 0 0 0;
+        margin: 17mm 0 17mm 0 !important;
       }
       @page :first {
-        margin: 0
+        margin-top: 0 !important;
       }
       * {
         print-color-adjust: exact;
@@ -33,9 +30,9 @@
         width: 100%;
         height: 100%;
         min-height: 100%;
+        display: flex;
         margin: 0;
         padding: 0;
-        display: flex;
         justify-content: center;
         align-items: center;
         print-color-adjust: exact;

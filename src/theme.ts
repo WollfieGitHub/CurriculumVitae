@@ -2,16 +2,17 @@
 const DEFAULT_FONT_FAMILY = "Georgia";
 
 export const CVTheme = {
+	sectionPadding: 30,
 	backgroundColor: "#FFFFFF",
 	surfaceColor: "#D4E7DE",
 
 	fontFamily: DEFAULT_FONT_FAMILY,
 
-	defaultHeading: { fontFamily: DEFAULT_FONT_FAMILY, fontWeight: "bold", fontSize: "24pt" },
+	defaultHeading: { fontFamily: DEFAULT_FONT_FAMILY, fontWeight: "bold", fontSize: "24pt", lineHeight: 1.0 },
 	headingSurname: { color: "#0C6B55", fontFamily: DEFAULT_FONT_FAMILY, fontWeight: "bold", fontSize: "24pt" },
 	headingEmploy: { fontFamily: DEFAULT_FONT_FAMILY, fontSize: "16pt" },
 	headingOrientation: { fontFamily: DEFAULT_FONT_FAMILY, fontSize: "12pt" },
-	headingDetails: { fontFamily: DEFAULT_FONT_FAMILY, fontSize: "11pt", lineHeight: 1.0, marginTop: 20, },
+	headingDetails: { fontFamily: DEFAULT_FONT_FAMILY, fontSize: "11pt", lineHeight: 1.0 },
 	headingSection: {
 		color: "#0C6B55", fontFamily: DEFAULT_FONT_FAMILY, fontWeight: "bold", fontSize: "12pt",
 		marginRight: 10, flexGrow: 1, flexShrink: 0,

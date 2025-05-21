@@ -14,14 +14,16 @@ export default function RelevantCourses(
 ) {
 
 	return <div style={{
-		display: "flex", flexDirection: "column",
+		width: "100%", display: "flex",
+		flexDirection: "column",
 		justifyContent: "start", alignItems: "start",
 		gap: 10,
 	}}>
 		{courses.map(({title, description}, index) =>
-			<div
-				style={{display: "table", breakInside: "avoid"}}
-			>
+			<div style={{
+				display: "table",
+				breakInside: "avoid",
+			}}>
 				<div style={{
 					display: "flex", flexDirection: "column", justifyContent: "start", alignItems: "start",
 					breakInside: "avoid", overflow: "visible"
